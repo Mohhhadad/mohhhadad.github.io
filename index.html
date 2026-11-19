@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name</title>
-  <meta name="description" content="Personal website and resume of Your Name">
+  <title>Mohammad Hadad</title>
+  <meta name="description" content="Mohammad Hadad – M.Sc. Wirtschaftsinformatik, Universität Mannheim. Datenanalyse und Machine Learning.">
   <style>
     :root {
       --bg: #ffffff;
@@ -29,15 +29,15 @@
       color: var(--text);
       line-height: 1.6;
     }
-    main { max-width: 720px; margin: 0 auto; padding: 56px 20px; }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 20px; }
     header { margin-bottom: 40px; }
     h1 { font-size: 2rem; line-height: 1.2; }
     .role { color: var(--muted); font-size: 1.1rem; margin-top: 4px; }
     .about { margin-top: 16px; }
-    .links { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 16px; }
+    .links { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px 20px; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    section { margin-top: 40px; }
+    section { margin-top: 44px; }
     h2 {
       font-size: 0.85rem;
       text-transform: uppercase;
@@ -47,18 +47,27 @@
       padding-bottom: 8px;
       margin-bottom: 20px;
     }
-    .item { margin-bottom: 24px; }
-    .item-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; }
+    .item { margin-bottom: 26px; }
+    .item-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2px 16px; }
     .item-title { font-weight: 600; }
-    .date { color: var(--muted); font-size: 0.9rem; }
+    .date { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
     .place { color: var(--muted); }
     .item p { margin-top: 6px; }
-    .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
-    .skills li {
+    .item ul { margin: 6px 0 0 20px; }
+    .item li { margin-top: 2px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin-top: 8px; }
+    .tags li {
       border: 1px solid var(--line);
       border-radius: 999px;
-      padding: 4px 12px;
-      font-size: 0.9rem;
+      padding: 2px 12px;
+      font-size: 0.85rem;
+    }
+    .skills { display: grid; grid-template-columns: 200px 1fr; gap: 10px 20px; }
+    .skills dt { font-weight: 600; }
+    .skills dd { color: var(--text); }
+    @media (max-width: 560px) {
+      .skills { grid-template-columns: 1fr; gap: 2px; }
+      .skills dd { margin-bottom: 10px; }
     }
     footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
   </style>
@@ -66,71 +75,164 @@
 <body>
   <main>
     <header>
-      <h1>Your Name</h1>
-      <p class="role">Your Job Title</p>
+      <h1>Mohammad Hadad</h1>
+      <p class="role">M.Sc. Wirtschaftsinformatik · Datenanalyse &amp; Machine Learning · Mannheim</p>
       <p class="about">
-        A short paragraph about yourself: what you do, what you're interested in,
-        and what kind of work you're looking for.
+        Masterstudent der Wirtschaftsinformatik an der Universität Mannheim mit Berufserfahrung als
+        Systemanalytiker und praktischer Erfahrung in Datenanalyse und Machine Learning. In
+        Data-Mining-Projekten habe ich umfangreiche Datenbestände aufbereitet und Klassifikationsmodelle
+        mit Python, Pandas und scikit-learn entwickelt. Mein besonderes Interesse gilt der prädiktiven
+        Modellierung, medizinischen Real-World-Daten und interdisziplinären Forschungsprojekten.
       </p>
       <div class="links">
-        <a href="mailto:you@example.com">Email</a>
-        <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+        <a href="mailto:mohhhadad@gmail.com">mohhhadad@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mohammad-hadad">LinkedIn</a>
         <a href="https://github.com/Mohhhadad">GitHub</a>
       </div>
     </header>
 
     <section>
-      <h2>Experience</h2>
+      <h2>Berufserfahrung</h2>
+
       <div class="item">
         <div class="item-head">
-          <span class="item-title">Job Title</span>
-          <span class="date">2023 – Present</span>
+          <span class="item-title">Studentische Hilfskraft – Medientechnik</span>
+          <span class="date">06/2025 – heute</span>
         </div>
-        <div class="place">Company Name, City</div>
-        <p>What you did and what you achieved in this role.</p>
+        <div class="place">Universität Mannheim · Mannheim</div>
+        <ul>
+          <li>Technische Betreuung und Unterstützung von Anwendern im laufenden Veranstaltungsbetrieb</li>
+          <li>Analyse und Behebung technischer Störungen sowie Dokumentation relevanter Informationen</li>
+        </ul>
       </div>
+
       <div class="item">
         <div class="item-head">
-          <span class="item-title">Job Title</span>
-          <span class="date">2021 – 2023</span>
+          <span class="item-title">Bundesfreiwilligendienst – Öffentlichkeitsarbeit &amp; Community Support</span>
+          <span class="date">11/2023 – 10/2024</span>
         </div>
-        <div class="place">Company Name, City</div>
-        <p>What you did and what you achieved in this role.</p>
+        <div class="place">ESTAruppin e.V. · Neuruppin</div>
+        <ul>
+          <li>Gestaltung von Flyern, Social-Media-Beiträgen und Videos sowie Pflege der Veranstaltungswebseite</li>
+          <li>Mitorganisation und Begleitung von Veranstaltungen und Community-Aktivitäten</li>
+          <li>Durchführung von Workshops zu Instagram und Canva für Teammitglieder</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">Systemanalytiker</span>
+          <span class="date">06/2020 – 06/2022</span>
+        </div>
+        <div class="place">Alhasa Ideal Schools · Al-Mubarraz, Saudi-Arabien</div>
+        <ul>
+          <li>Erstellung und Weiterentwicklung von Berichten und Dashboards für Managemententscheidungen</li>
+          <li>Analyse, Aufbereitung und Plausibilisierung von HR- und Prozessdaten</li>
+          <li>Anforderungserhebung und Abstimmung zwischen Fachabteilungen und externen IT-Dienstleistern</li>
+          <li>Analyse und Optimierung digitaler HR-Prozesse sowie Einführung und Betreuung von Software</li>
+        </ul>
       </div>
     </section>
 
     <section>
-      <h2>Education</h2>
+      <h2>Projekte</h2>
+
       <div class="item">
-        <div class="item-head">
-          <span class="item-title">Degree, Major</span>
-          <span class="date">2017 – 2021</span>
-        </div>
-        <div class="place">University Name</div>
+        <span class="item-title">Vorhersage des Raucherstatus anhand biologischer Gesundheitsdaten</span>
+        <p>
+          Data-Mining-Projekt mit 55.000 Datensätzen: Datenaufbereitung, Feature Engineering, explorative
+          Analyse sowie Implementierung und Optimierung eines Random-Forest-Modells. Bewertung mit ROC-AUC,
+          Precision, Recall, F1-Score und Confusion Matrix; Untersuchung von Klassenungleichgewicht,
+          Biomarkern und demografischen Verzerrungen.
+        </p>
+        <ul class="tags"><li>Python</li><li>Pandas</li><li>scikit-learn</li><li>Random Forest</li></ul>
+      </div>
+
+      <div class="item">
+        <span class="item-title">Agiles Digitalisierungsprojekt – DZ BANK</span>
+        <p>
+          Digitale Abbildung von Geschäftsprozessen, automatisierte Workflows und ein Power-BI-Dashboard
+          für relevante Kennzahlen. Dokumentation und Präsentation der Lösung im agilen Team.
+        </p>
+        <ul class="tags"><li>Power Apps</li><li>Power Automate</li><li>Dataverse</li><li>Power BI</li></ul>
+      </div>
+
+      <div class="item">
+        <span class="item-title">Analyse von Android-Malware-Daten</span>
+        <p>
+          Analyse von über 200.000 Netzwerkflüssen mit 39 Merkmalen: Datenbereinigung, Visualisierung sowie
+          Entwicklung und Bewertung verschiedener Machine-Learning-Modelle.
+        </p>
+        <ul class="tags"><li>Python</li><li>Machine Learning</li><li>Datenvisualisierung</li></ul>
+      </div>
+
+      <div class="item">
+        <span class="item-title">Case-Tracking-System für ein Dentallabor</span>
+        <p>
+          Prototyp zur digitalen Nachverfolgung von Kundenaufträgen, Produktionsschritten und
+          Lieferprozessen – zur Digitalisierung manueller Abläufe.
+        </p>
+      </div>
+
+      <div class="item">
+        <span class="item-title">Reade – Plattform für gebrauchte Bücher</span>
+        <p>
+          Bachelor-Abschlussprojekt: Webbasiertes System zum Einstellen, Suchen und Bestellen gebrauchter
+          Bücher mit Bestellverfolgung und Live-Chat. Ausgewählt für die Buchmesse 2019 der King Faisal
+          University.
+        </p>
+        <ul class="tags"><li>PHP</li><li>HTML</li><li>JavaScript</li><li>SQL</li></ul>
       </div>
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2>Ausbildung</h2>
+
       <div class="item">
         <div class="item-head">
-          <a class="item-title" href="#">Project Name</a>
+          <span class="item-title">M.Sc. Wirtschaftsinformatik</span>
+          <span class="date">seit 02/2025</span>
         </div>
-        <p>One or two sentences about the project and the tools you used.</p>
+        <div class="place">Universität Mannheim</div>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">Datenanalysekurs</span>
+          <span class="date">09/2023 – 06/2024</span>
+        </div>
+        <div class="place">ReDI School of Digital Integration · Berlin</div>
+        <p>Python, Statistik und A/B-Tests, SQL, Datenvisualisierung, Grundlagen Machine Learning, Scrum und Kanban.</p>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">B.Sc. Managementinformationssysteme</span>
+          <span class="date">08/2015 – 05/2020</span>
+        </div>
+        <div class="place">King Faisal University · Al-Hofuf, Saudi-Arabien</div>
       </div>
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        <li>Skill 4</li>
-      </ul>
+      <h2>Kenntnisse</h2>
+      <dl class="skills">
+        <dt>Programmierung</dt>
+        <dd>Python (Pandas, scikit-learn, Seaborn), SQL, PHP, HTML, JavaScript</dd>
+        <dt>Datenanalyse</dt>
+        <dd>Datenaufbereitung, Feature Engineering, Machine Learning, Modellbewertung, Visualisierung</dd>
+        <dt>Microsoft Power Platform</dt>
+        <dd>Power Apps, Power Automate, Dataverse, Power BI</dd>
+        <dt>Methoden</dt>
+        <dd>Agile Projektarbeit, Prozess- und Anforderungsanalyse, Projektdokumentation</dd>
+        <dt>Tools</dt>
+        <dd>Microsoft Office, Google Workspace, Odoo ERP, Slack, Teams, Zoom</dd>
+        <dt>Sprachen</dt>
+        <dd>Arabisch (Muttersprache), Englisch (C1), Deutsch (B2)</dd>
+      </dl>
     </section>
 
-    <footer>&copy; 2026 Your Name</footer>
+    <footer>&copy; 2026 Mohammad Hadad</footer>
   </main>
 </body>
 </html>
