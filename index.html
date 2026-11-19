@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <meta name="description" content="Personal website and resume of Your Name">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #656d76;
+      --line: #e5e7eb;
+      --accent: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --line: #30363d;
+        --accent: #58a6ff;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 20px; }
+    header { margin-bottom: 40px; }
+    h1 { font-size: 2rem; line-height: 1.2; }
+    .role { color: var(--muted); font-size: 1.1rem; margin-top: 4px; }
+    .about { margin-top: 16px; }
+    .links { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 16px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    section { margin-top: 40px; }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .item { margin-bottom: 24px; }
+    .item-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; }
+    .item-title { font-weight: 600; }
+    .date { color: var(--muted); font-size: 0.9rem; }
+    .place { color: var(--muted); }
+    .item p { margin-top: 6px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+    .skills li {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+    }
+    footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Your Name</h1>
+      <p class="role">Your Job Title</p>
+      <p class="about">
+        A short paragraph about yourself: what you do, what you're interested in,
+        and what kind of work you're looking for.
+      </p>
+      <div class="links">
+        <a href="mailto:you@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+        <a href="https://github.com/Mohhhadad">GitHub</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">Job Title</span>
+          <span class="date">2023 – Present</span>
+        </div>
+        <div class="place">Company Name, City</div>
+        <p>What you did and what you achieved in this role.</p>
+      </div>
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">Job Title</span>
+          <span class="date">2021 – 2023</span>
+        </div>
+        <div class="place">Company Name, City</div>
+        <p>What you did and what you achieved in this role.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-head">
+          <span class="item-title">Degree, Major</span>
+          <span class="date">2017 – 2021</span>
+        </div>
+        <div class="place">University Name</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="item">
+        <div class="item-head">
+          <a class="item-title" href="#">Project Name</a>
+        </div>
+        <p>One or two sentences about the project and the tools you used.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <li>Skill 3</li>
+        <li>Skill 4</li>
+      </ul>
+    </section>
+
+    <footer>&copy; 2026 Your Name</footer>
+  </main>
+</body>
+</html>
